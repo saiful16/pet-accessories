@@ -21,6 +21,35 @@
             }
         }
     </script>
+    <style>
+     
+        /* .trending-pet-product{
+            background: linear-gradient(-45deg, #FFDC26,#FFF9F4);
+            background-size: 400% 400%;
+            animation: bg-tending 10s ease infinite;
+        } */
+
+        .trending-pet-product{
+            animation: bg-trending 10s infinite  linear;
+        }
+        @keyframes bg-trending {
+            0%{
+                background:darksalmon;
+            }
+            25%{
+                background: blanchedalmond;
+            }
+            50%{
+                background:chocolate;
+            }
+            75%{
+                background: coral;
+            }
+            100%{
+                background: darkgoldenrod;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -79,7 +108,6 @@
         </section>
     </header>
     <main class="">
-
         <!-- browse by categories section -->
         <section class="mb-12 lg:mb-28 container mx-auto">
             <div class="p-4 md:p-0">
@@ -131,7 +159,7 @@
             </div>
         </section>
         <!-- trending products section -->
-        <section class="md:bg-amber-100">
+        <section class=" trending-pet-product">
             <div class="container mx-auto py-5 px-4 md:py-32">
                 <h1 class="text-4xl font-bold mb-11">Trending Pet Products</h1>
                 <!-- all product container -->
@@ -314,7 +342,6 @@
                 </div>
             </div>
         </section>
-
         <!-- low price section  -->
         <section class="container mx-auto my-8 md:my-24 relative">
             <div class="p-3 lg:p-0 mb-64">
@@ -412,5 +439,4 @@
         </div>
     </footer>
 </body>
-
 </html>
