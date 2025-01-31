@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/5a8c4f86b6.js" crossorigin="anonymous"></script>
     <!-- daisy UI -->
@@ -16,37 +21,48 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
-                }
-            }
+                    },
+                },
+            },
         }
     </script>
     <style>
-     
-        /* .trending-pet-product{
-            background: linear-gradient(-45deg, #FFDC26,#FFF9F4);
-            background-size: 400% 400%;
-            animation: bg-tending 10s ease infinite;
-        } */
-
-        .trending-pet-product{
-            animation: bg-trending 10s infinite  linear;
+        .adlam {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
         }
+
+        .sora{
+            font-family: "Sora", serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+
+        .trending-pet-product {
+            animation: bg-trending 10s infinite linear;
+        }
+
         @keyframes bg-trending {
-            0%{
-                background:darksalmon;
+            0% {
+                background: darksalmon;
             }
-            25%{
+
+            25% {
                 background: blanchedalmond;
             }
-            50%{
-                background:chocolate;
+
+            50% {
+                background: chocolate;
             }
-            75%{
+
+            75% {
                 background: coral;
             }
-            100%{
-                background: darkgoldenrod;
+
+            100% {
+                background: darksalmon;
             }
         }
     </style>
@@ -55,12 +71,12 @@
 <body>
     <header class="">
         <!-- navbar  -->
-        <div class=" bg-yellow-50">
+        <div class=" bg-yellow-50 sora">
             <div class="navbar bg-base-100 container mx-auto py-3  bg-yellow-50">
                 <div class="navbar-start">
 
                     <a class="btn btn-ghost text-xl"><img src="assets/logo-header.png" alt=""> <span
-                            class="hidden md:inline-flex">Bowse Pets</span></a>
+                            class="hidden md:inline-flex text-2xl">Browse<span class="text-yellow-500">4</span>Pets</span></a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -69,9 +85,9 @@
                         <li><a>Contact us</a></li>
                     </ul>
                 </div>
-                <div class="navbar-end space-x-3">
-                    <a class=""><i class="fa-regular fa-bell hidden md:block"></i></a>
-                    <a class=""><i class="fa-solid fa-magnifying-glass hidden md:block"></i></a>
+                <div class="navbar-end space-x-2">
+                    <a class="btn bg-transparent border-0"><i class="fa-regular fa-bell hidden md:block"></i></a>
+                    <a class="btn bg-transparent border-0"><i class="fa-solid fa-magnifying-glass hidden md:block"></i></a>
                     <a class="btn hidden md:block bg-transparent border-2 text-xl pt-2">Login</a>
                     <a class="btn hidden md:block  bg-yellow-300 text-xl hover:bg-yellow-400 pt-2">Register</a>
 
@@ -99,10 +115,10 @@
                 style="background-image: url(assets/cat-big.png);">
                 <!-- banner content -->
                 <div class="max-w-screen-sm space-y-4 pt-10">
-                    <h1 class="text-5xl  font-bold">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
-                    <p>Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now
+                    <h1 class="text-5xl font-bold adlam">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+                    <p class="sora text-gray-500">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now
                         and make tails wag with joy!</p>
-                    <button class="btn bg-yellow-300 py-0">Find a pet</button>
+                    <button class="btn bg-yellow-300 py-0 sora">Find a pet</button>
                 </div>
             </div>
         </section>
@@ -111,49 +127,49 @@
         <!-- browse by categories section -->
         <section class="mb-12 lg:mb-28 container mx-auto">
             <div class="p-4 md:p-0">
-                <h1 class="text-4xl font-bold mb-10">Browse By Categories</h1>
+                <h1 class="text-4xl font-bold mb-10 adlam">Browse By Categories</h1>
                 <!-- card container -->
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
                     <!-- card-1 -->
                     <div class="bg-yellow-300 flex flex-col justify-center items-center p-8  rounded-md">
                         <div><img class="bg-white rounded-full p-4" src="assets/dog-cartoon.png" alt=""></div>
-                        <h3 class="font-bold">Dog</h3>
-                        <p class="">3 Items</p>
+                        <h3 class="font-bold adlam py-3">Dog</h3>
+                        <p class="sora">3 Items</p>
                     </div>
                     <!-- card-2 -->
                     <div class="bg-yellow-300 flex flex-col justify-center items-center p-8 rounded-md">
                         <div rounded-md><img class="bg-white rounded-full p-4" src="assets/fish-cartoon.png" alt="">
                         </div>
-                        <h3 class="font-bold">Fish</h3>
-                        <p>3 Items</p>
+                        <h3 class="font-bold adlam py-3">Fish</h3>
+                        <p class="sora">3 Items</p>
                     </div>
                     <!-- card-3 -->
                     <div class="bg-yellow-300 flex flex-col justify-center items-center p-8 rounded-md">
                         <div rounded-md><img class="bg-white rounded-full p-4" src="assets/cat-cartoon.png" alt="">
                         </div>
-                        <h3 class="font-bold">Cat</h3>
-                        <p>5 Items</p>
+                        <h3 class="font-bold adlam py-3">Cat</h3>
+                        <p class="sora">5 Items</p>
                     </div>
                     <!-- card-4 -->
                     <div class="bg-yellow-300 flex flex-col justify-center items-center p-8 rounded-md">
                         <div rounded-md><img class="bg-white rounded-full p-4" src="assets/bird-cartoon.png" alt="">
                         </div>
-                        <h3 class="font-bold">Birds</h3>
-                        <p>3 Items</p>
+                        <h3 class="font-bold adlam py-3">Birds</h3>
+                        <p class="sora">3 Items</p>
                     </div>
                     <!-- card-5 -->
                     <div class="bg-yellow-300 flex flex-col justify-center items-center p-8 rounded-md">
                         <div rounded-md><img class="bg-white rounded-full p-4" src="assets/mouse-cartoon.png" alt="">
                         </div>
-                        <h3 class="font-bold">Small Pets</h3>
-                        <p>8 Items</p>
+                        <h3 class="font-bold adlam py-3">Small Pets</h3>
+                        <p class="sora">8 Items</p>
                     </div>
                     <!-- card-6 -->
                     <div class="bg-yellow-300 flex flex-col justify-center items-center p-8 rounded-md">
                         <div rounded-md><img class="bg-white rounded-full p-4" src="assets/rabbit-cartoon.png" alt="">
                         </div>
-                        <h3 class="font-bold">Rabbit</h3>
-                        <p>2 Items</p>
+                        <h3 class="font-bold adlam py-3">Rabbit</h3>
+                        <p class="sora">2 Items</p>
                     </div>
                 </div>
             </div>
@@ -161,9 +177,9 @@
         <!-- trending products section -->
         <section class=" trending-pet-product">
             <div class="container mx-auto py-5 px-4 md:py-32">
-                <h1 class="text-4xl font-bold mb-11">Trending Pet Products</h1>
+                <h1 class="text-4xl font-bold mb-11 adlam">Trending Pet Products</h1>
                 <!-- all product container -->
-                <div class="flex flex-col lg:flex-row gap-4">
+                <div class="flex flex-col lg:flex-row gap-4 sora">
                     <!-- t-shirt container  -->
                     <div class="h-96 lg:w-[424px] lg:h-[400px] bg-yellow-300 py-10 rounded-md px-5 bg-right-bottom bg-no-repeat bg-[length:200px_300px] md:bg-[length:350px_350px] lg:bg-[length:250px_300px]"
                         style="background-image: url(assets/cute-pet-small.png);">
@@ -175,7 +191,7 @@
                                 <p class="text-gray-500">Discover a world of treats, toys,<br> and essentials handpicked
                                     for <br> your furry
                                     friends.</p>
-                                <button class="btn bg-amber-50">Shop Now</button>
+                                <button class="btn bg-amber-50 hover:bg-amber-400">Shop Now</button>
                             </div>
                         </div>
                     </div>
@@ -317,9 +333,6 @@
                                 <p class="text-gray-500">$39.99</p>
                             </div>
                         </div>
-
-
-
                         <!-- card -9 -->
                         <div class="flex items-center bg-white gap-4 rounded-md border p-3 hidden md:inline-flex">
                             <!-- logo container -->
@@ -346,7 +359,7 @@
         <section class="container mx-auto my-8 md:my-24 relative">
             <div class="p-3 lg:p-0 mb-64">
                 <div>
-                    <h2 class="text-4xl ">Everyday low Price</h2>
+                    <h2 class="text-4xl adlam">Everyday low Price</h2>
                 </div>
                 <!-- low price container  -->
                 <div class="flex flex-col md:flex-row w-full gap-4 my-8 md:my-24 ">
@@ -355,10 +368,10 @@
                         <div class="h-96  lg:h-[480px] py-10 rounded-md px-5 bg-right-bottom bg-no-repeat bg-[length:200px_300px] md:bg-[length:350px_350px] lg:bg-[length:450px_450px] grid"
                             style="background-image: url(assets/cute-dog-mid.png);">
                             <div class="flex items-center pl-5 lg:pl-10">
-                                <!-- t-shirt content -->
-                                <div class="space-y-4">
+                                <!-- grooming content -->
+                                <div class="space-y-4 adlam">
                                     <p class="text-xl">Under Price</p>
-                                    <h1 class="text-4xl font-bold">Pet Grooming Mitt
+                                    <h1 class="text-3xl font-bold">Pet Grooming Mitt
                                     </h1>
                                     <p class=" text-2xl text-white">(Easy Hair Removal)</p>
                                     <h1 class="text-5xl">$7.99</h1>
@@ -367,8 +380,8 @@
                         </div>
                     </div>
                     <!-- t-shirt -->
-                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-200 lg:w-1/3 rounded-lg">
-                        <div class="h-96  lg:h-[480px] py-10  px-5 bg-right-bottom bg-no-repeat bg-[length:200px_300px] md:bg-[length:350px_350px] lg:bg-[length:350px_350px] "
+                    <div class="bg-gradient-to-br from-yellow-50 to-yellow-200 lg:w-1/3 rounded-lg adlam">
+                        <div class="h-96  lg:h-[480px] py-10  px-5 bg-right-bottom bg-no-repeat bg-[length:200px_300px] md:bg-[length:350px_350px] lg:bg-[length:300px_300px] "
                             style="background-image: url(assets/cute-pet-mid.png);">
                             <div class="pl-5 lg:pl-10">
                                 <!-- t-shirt content -->
@@ -392,27 +405,27 @@
                         </div>
                         <!-- content -->
                         <div class="3 text-center lg:text-left w-full">
-                            <h1 class="text-5xl font-bold ">Get Pawsome News!</h1>
+                            <h1 class="text-5xl adlam">Get Pawsome News!</h1>
                             <p class="py-6">
                                 Exclusive training tips, ticks, product deals and more.
                             </p>
                             <div>
                                 <input type="text" placeholder="Email here..."
-                                    class="input  input-primary border-0 w-full max-w-xs mb-4" />
+                                    class="sora input  input-primary border-0 w-full max-w-xs mb-4" />
                             </div>
-                            <button class="btn text-xl px-5 bg-yellow-300">Subscribe</button>
+                            <button class="btn sora text-xl px-5 bg-yellow-300">Subscribe</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-yellow-200 pt-96 lg:pt-80 lg:pb-24 mt-96 md:mt-0">
+    <footer class="bg-yellow-200 pt-96 lg:pt-80 lg:pb-24 mt-96 md:mt-0 sora">
         <div class="footer text-base-content p-10 container mx-auto grid">
             <div>
                 <div class="flex justify-center items-center gap-5">
                     <img src="assets/logo-footer.png" alt="">
-                    <h1 class="text-2xl">Browse Pets</h1>
+                    <h1 class="text-2xl">Browse<span class="text-yellow-500">4</span>Pets</h1>
                 </div>
                 <p class="text-gray-600 text-xl">
                     Discover a world of treats, toys, and <br>
@@ -439,4 +452,5 @@
         </div>
     </footer>
 </body>
+
 </html>
