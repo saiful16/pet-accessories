@@ -40,29 +40,29 @@
         }
 
 
-        .trending-pet-product {
+        .online-only-savings {
             animation: bg-trending 10s infinite linear;
         }
 
         @keyframes bg-trending {
             0% {
-                background: darksalmon;
+                background: hwb(60 0% 0%);
             }
 
             25% {
-                background: blanchedalmond;
+                background: yellowgreen;
             }
 
             50% {
-                background: chocolate;
+                background: greenyellow;
             }
 
             75% {
-                background: coral;
+                background: yellowgreen;
             }
 
             100% {
-                background: darksalmon;
+                background: hwb(60 0% 0%);
             }
         }
     </style>
@@ -87,8 +87,8 @@
                     </ul>
                 </div>
                 <div class="navbar-end space-x-2">
-                    <a class="btn bg-transparent border-0"><i class="fa-regular fa-bell hidden md:block"></i></a>
-                    <a class="btn bg-transparent border-0"><i
+                    <a class="md:btn bg-transparent border-0 "><i class="fa-regular fa-bell hidden md:block"></i></a>
+                    <a class="md:btn bg-transparent border-0"><i
                             class="fa-solid fa-magnifying-glass hidden md:block"></i></a>
                     <a class="btn hidden md:block bg-transparent border-2 text-xl pt-2">Login</a>
                     <a class="btn hidden md:block  bg-yellow-300 text-xl hover:bg-yellow-400 pt-2">Register</a>
@@ -178,7 +178,7 @@
             </div>
         </section>
         <!-- trending products section -->
-        <section class=" trending-pet-product">
+        <section class=" trending-pet-product lg:bg-yellow-100">
             <div class="container mx-auto py-5 px-4 md:py-32">
                 <h1 class="text-4xl font-bold mb-11 adlam">Trending Pet Products</h1>
                 <!-- all product container -->
@@ -360,34 +360,78 @@
         </section>
 
         <!-- extra section/ online only section -->
-        <section class="container mx-auto my-32 p-4 lg:p-0">
-            <div >
+        <section class="container mx-auto my-5 md:my-32 p-4 online-only-savings rounded-lg">
+            <div>
                 <h1 class="adlam text-3xl mb-6 lg:mb-14">Online Only Savings</h1>
                 <!-- <p class="sora  text-gray-500 my-5">Select Hill's Science Diet Perfect Weight & Adult Light dog food</p> -->
-                <!-- cad container -->
-                <div class="flex flex-col lg:flex-row gap-5 bg-slate-200 p-5 lg:p-20 rounded-lg">
+                <!-- card container -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 rounded-lg">
                     <!-- card-1 -->
-                    <div class="content-center bg-slate-50 rounded-lg p-6 ">
-                        <div class="flex items-center justify-between gap-5 p-10 w-full">
-                            <div class="text-3xl font-bold">Save 10%</div>
-                            <div>
-                                <img class=" lg:w-3/3 rounded-lg" src="assets/pet-food-1.jpeg" alt="">
+                    <div class="content-center rounded-lg p-6 bg-slate-200">
+                        <div class="flex items-center justify-between gap-5 w-full">
+                            <div class="text-3xl  md:font-bold flex-1">Save-20%</div>
+                            <div class="flex-1">
+                                <img class="lg:w-3/3 rounded-lg" src="assets/pet-food-1.jpeg" alt="">
                             </div>
                         </div>
-                        <h4 class="text-2xl font-bold">With Code : PETFORYOU</h4>
-                        <p class="text-xl font-medium">Till : 21-Februay-2025</p>
+                        <h4 class="mt-4 md:text-xl text-base font-bold">With Code : FEB2025</h4>
+                        <p class="md:text-xl text-sm font-medium">Till : 21-February-2025</p>
                     </div>
 
                     <!-- card-2 -->
-                    <div class="content-center bg-slate-50 rounded-lg p-6 ">
-                        <div class="flex items-center justify-between gap-5 p-10">
-                            <div class="text-3xl font-bold">Save 20%</div>
-                            <div>
-                                <img class="w-3/3 rounded-lg" src="assets/pet-food2.jpeg" alt="">
+                    <div class="content-center rounded-lg p-6 bg-slate-200">
+                        <div class="flex items-center justify-between gap-5 w-full">
+                            <div class="text-3xl  md:font-bold flex-1">Save-20%</div>
+                            <div class="flex-1">
+                                <img class="lg:w-3/3 rounded-lg" src="assets/pet-food2.jpeg" alt="">
                             </div>
                         </div>
-                        <h4 class="text-2xl font-bold">With Code : PETFORYOU</h4>
-                        <p class="text-xl font-medium">Till : 21-Februay-2025</p>
+                        <h4 class="mt-4 md:text-xl text-base font-bold">With Code : FEB2025</h4>
+                        <p class="md:text-xl text-sm font-medium">Till : 21-February-2025</p>
+                    </div>
+                    <!-- card-3 -->
+                    <div class="content-center rounded-lg p-6 bg-slate-200">
+                        <div class="flex items-center justify-between gap-5 w-full">
+                            <div class="text-3xl  md:font-bold flex-1">Save-20%</div>
+                            <div class="flex-1">
+                                <img class="lg:w-3/3 rounded-lg" src="assets/pet-food-1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 md:text-xl text-base font-bold">With Code : FEB2025</h4>
+                        <p class="md:text-xl text-sm font-medium">Till : 21-February-2025</p>
+                    </div>
+                    <!-- card-4 -->
+                    <div class="content-center rounded-lg p-6 bg-slate-200">
+                        <div class="flex items-center justify-between gap-5 w-full">
+                            <div class="text-3xl  md:font-bold flex-1">Save-20%</div>
+                            <div class="flex-1">
+                                <img class="lg:w-3/3 rounded-lg" src="assets/pet-food2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 md:text-xl text-base font-bold">With Code : FEB2025</h4>
+                        <p class="md:text-xl text-sm font-medium">Till : 21-February-2025</p>
+                    </div>
+                    <!-- card-5 -->
+                    <div class="content-center rounded-lg p-6 bg-slate-200">
+                        <div class="flex items-center justify-between gap-5 w-full">
+                            <div class="text-3xl  md:font-bold flex-1">Save-20%</div>
+                            <div class="flex-1">
+                                <img class="lg:w-3/3 rounded-lg" src="assets/pet-food-1.jpeg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 md:text-xl text-base font-bold">With Code : FEB2025</h4>
+                        <p class="md:text-xl text-sm font-medium">Till : 21-February-2025</p>
+                    </div>
+                    <!-- card-6 -->
+                    <div class="content-center rounded-lg p-6 bg-slate-200">
+                        <div class="flex items-center justify-between gap-5 w-full">
+                            <div class="text-3xl  md:font-bold flex-1">Save-20%</div>
+                            <div class="flex-1">
+                                <img class="lg:w-3/3 rounded-lg" src="assets/pet-food2.jpeg" alt="">
+                            </div>
+                        </div>
+                        <h4 class="mt-4 md:text-xl text-base font-bold">With Code : FEB2025</h4>
+                        <p class="md:text-xl text-sm font-medium">Till : 21-February-2025</p>
                     </div>
                 </div>
             </div>
@@ -435,32 +479,34 @@
                 </div>
             </div>
             <!-- email subscription section -->
-            <div class=" bg-[#FFF9F4] rounded-lg absolute w-full -mt-52 lg:p-5 lg:top-[900px]">
-                <div class="hero ">
-                    <div class="hero-content flex-col lg:flex-row gap-9 w-full">
-                        <!-- image -->
-                        <div>
-                            <img src="assets/cute-pet-mid.png" class="max-w-sm rounded-lg bg-transparent w-full" />
-                        </div>
-                        <!-- content -->
-                        <div class="3 text-center lg:text-left w-full">
-                            <h1 class="text-5xl adlam">Get Pawsome News!</h1>
-                            <p class="py-6">
-                                Exclusive training tips, ticks, product deals and more.
-                            </p>
+            <div class="p-4 md:p-0 absolute -mt-52 lg:top-[900px] w-full">
+                <div class=" bg-[#FFF9F4] rounded-lg  ">
+                    <div class="hero ">
+                        <div class="hero-content flex-col lg:flex-row gap-9 w-full">
+                            <!-- image -->
                             <div>
-                                <input type="text" placeholder="Email here..."
-                                    class="sora input  input-primary border-0 w-full max-w-xs mb-4" />
+                                <img src="assets/cute-pet-mid.png" class="max-w-sm rounded-lg bg-transparent w-full" />
                             </div>
-                            <button class="btn sora text-xl px-5 bg-yellow-300">Subscribe</button>
+                            <!-- content -->
+                            <div class="3 text-center lg:text-left w-full">
+                                <h1 class="text-5xl adlam">Get Pawsome News!</h1>
+                                <p class="py-6">
+                                    Exclusive training tips, ticks, product deals and more.
+                                </p>
+                                <div>
+                                    <input type="text" placeholder="Email here..."
+                                        class="sora input  input-primary border-0 w-full max-w-xs mb-4" />
+                                </div>
+                                <button class="btn sora text-xl px-5 bg-yellow-300">Subscribe</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-yellow-200 pt-96 lg:pt-80 lg:pb-24 mt-96 md:mt-0 sora">
-        <div class="footer text-base-content p-10 container mx-auto grid">
+    <footer class="bg-yellow-200 pt-96 lg:pt-60 lg:pb-24 mt-96 md:mt-0 sora">
+        <div class="footer text-base-content p-10 mt-10 md:mt-0 container mx-auto grid">
             <div>
                 <div class="flex justify-center items-center gap-5">
                     <img src="assets/logo-footer.png" alt="">
